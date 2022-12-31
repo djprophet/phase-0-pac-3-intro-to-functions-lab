@@ -50,5 +50,10 @@ describe('sayHiToHeadphonedRoommate(string)', function() {
     expect(sayHiToHeadphonedRoommate("Let's have dinner together!")).toEqual(
       "I would love to!"
     );
-  });
-})
+  })
+    it('returns "I would love to but I am vegan" if `string` is "Let\'s have chicken together!"`', function () {
+      expect(sayHiToHeadphonedRoommate("Let's have chicken together!")).toEqual(
+        "I would love to but...!"
+      );
+  })
+});
